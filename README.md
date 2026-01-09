@@ -1,4 +1,4 @@
-# 🦆 DuckHuntVR
+# DuckHuntVR
 
 **DuckHuntVR** is a student VR game project inspired by the classic *Duck Hunt* game, developed in **Unity** as part of the *VR and AR* course.
 
@@ -12,13 +12,13 @@ The game is a VR adaptation of the Duck Hunt concept and features two gameplay m
 
 ## 🎮 Game Modes
 
-### 🟢 Normal Mode
+### Normal Mode
 A classic Duck Hunt–style gameplay mode.  
 The player must shoot down a fixed number of targets using a limited magazine.  
 After the ammunition is depleted or a set amount of time passes, the game checks whether all targets have been destroyed.  
 If not, the player loses a life.
 
-### ⏱️ Time Mode
+### Time Mode
 A score-based mode focused on achieving the highest possible score.  
 As time passes, the number of targets increases, gradually raising the difficulty level.
 
@@ -39,7 +39,7 @@ All assets used in the project were downloaded as **free assets from the Unity A
 
 ---
 
-## 🥽 VR Support
+## VR Support
 
 - **HTC Vive Pro**
 - **Meta Quest**
@@ -55,13 +55,13 @@ The repository contains:
 
 ---
 
-### 🎯 Menu - mode selection
+### Menu - mode selection
 ![Mode Selection](screenshots/select-mode.png)
 
-### 🔫 Time mode
+### Time mode
 ![Gameplay 1](screenshots/gameplay-1.png)
 
-### 🦆 Normal mode
+### Normal mode
 ![Gameplay 2](screenshots/gameplay-2.png)
 
 ---
