@@ -24,7 +24,7 @@ public class FireBulletTrigger : MonoBehaviour
         bulletsNumberSettings();
         remainingShots = maxShots; // Normalny tryb
 
-        XRGrabInteractable grabbable = GetComponent<XRGrabInteractable>();
+        UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabbable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
         grabbable.activated.AddListener(FireBullet);
     }
    
@@ -37,7 +37,7 @@ public class FireBulletTrigger : MonoBehaviour
         {
             StartCoroutine(ShootCooldown());
             GameObject spawnedBullet = Instantiate(bullet, firePoint.position, Quaternion.identity);
-            spawnedBullet.GetComponent<Rigidbody>().velocity = firePoint.forward * fireSpeed;
+            spawnedBullet.GetComponent<Rigidbody>().linearVelocity = firePoint.forward * fireSpeed;
             AudioManager.Instance.PlaySound("shoot");
             Destroy(spawnedBullet, 3);
 
@@ -72,7 +72,7 @@ public class FireBulletTrigger : MonoBehaviour
         canShoot = true;
     }
 
-    //Colldown 1 sek na oddanie strza³u
+    //Colldown 1 sek na oddanie strzaï¿½u
     private IEnumerator ShootCooldown()
     {
         canShoot = false;
